@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>BARRE FILTRE</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+	<p class="filterCheck">
+		<input type="checkbox" checked="checked">
+		<label for="cdi">CDI</label>
+
+		<input type="checkbox" checked="checked">
+		<label for="cdd">CDD</label>
+
+		<input type="checkbox" checked="checked">
+		<label for="interim">Intérim</label>
+	</p>
+
+	<p class="filterMetier">
+		<input type="text" placeholder="Qualification, mot-clé, etc...">
+	</p>
+
+	<p class="filterCommune">
+		<input type="text" placeholder="Commune">
+	</p>
+
+	<p class="indicator">
+		<label for="amount">Glisser le curseur pour élargir la recherche autour de votre commune :</label>
+		<input type="text" id="amount" class="result-km" readonly >
+	</p>
+
+	<div class="position">
+		<div class="positionKm">
+			<span class="km0">0 km</span>
+			<span class="km25">25 km</span>
+			<span class="km50">50 km</span>
+			<span class="km75">75 km</span>
+			<span class="km100">100 km</span>
+		</div>
+		<div id="slider"></div>
+	</div>
+
+	
+
+	<p class="sectionButtonResult">
+		<a href="#" class="button button-highlight button-large buttonResult">Voir les 1000 offres</a>
+	</p>
+	
+</div>
+
+
+<script src="js/script.js"></script>
+</html>
